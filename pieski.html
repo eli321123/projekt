@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokarmiaj i wspieraj pieski</title>
+    <link rel="stylesheet" href="piesek.css">
+    <script>
+        function Nakarm(){
+            var imieZwierzecia = document.getElementById("imie").textContent;
+            var wiadomosc = "Nakarmiles " + imieZwierzecia + "!";
+            document.getElementById("wynik").textContent = wiadomosc;
+        }
+        function Nakarm2(){
+            var imieZwierzecia2 = document.getElementById("imie2").textContent;
+            var wiadomosc = "Nakarmiles " + imieZwierzecia2 + "!";
+            document.getElementById("wynik2").textContent = wiadomosc;
+        }
+        function Nakarm3(){
+            var imieZwierzecia3 = document.getElementById("imie3").textContent;
+            var wiadomosc = "Nakarmiles " + imieZwierzecia3 + "!";
+            document.getElementById("wynik3").textContent = wiadomosc;
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+    <div class="gora">
+        <h1>Nakarm pieski w potrzebie</h1>
+    </div>
+    </header>
+
+    <div class="napis">
+        <p>Dostępne pieski do karmienia</p>
+    </div>
+
+    <div class="pies1">
+        <img src="pies.jpg" alt="1"><br>
+        <p id="imie">megatron</p><br>
+        <button onclick="Nakarm()" id="buttonik">Nakarm Megatrona!</button>
+        <p id="wynik"></p>
+    </div>
+
+    <div class="pies2">
+        <img src="pies2.jpg" alt="1"><br>
+        <p id="imie2">Louis</p><br>
+        <button onclick="Nakarm2()" id="buttonik">Nakarm Louisa!</button>
+        <p id="wynik2"></p>
+    </div>
+
+    <div class="pies3">
+        <img src="pies3.jpg" alt="1"><br>
+        <p id="imie3">Norman</p><br>
+        <button onclick="Nakarm3()" id="buttonik">Nakarm Normana!</button>
+        <p id="wynik3"></p>
+    </div>
+</body>
+
+</html>
